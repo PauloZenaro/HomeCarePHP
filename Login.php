@@ -50,24 +50,3 @@ if(isset($_POST['LoginUsuario']) || isset($_POST['senha'])) {
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Cadastro de Usuário </title>
-</head>
-<body>
-    <h1>Cadastro</h1>
-<form action="" method="POST">
-        <label>Login:</label><input type="text" name="LoginUsuario"><br>
-        <label>Senha:</label><input type="password" name="senha"><br>
-        <br/>
-        <input class="btn btn-primary btn-lg btn-block" type="submit">
-
-    </form>
-    <br/>
-    <a class="btn btn-primary btn-lg btn-block"  href="./index.php?page=Cadastro/Cadastro">Cadastar</a>
-</body>
-</html>

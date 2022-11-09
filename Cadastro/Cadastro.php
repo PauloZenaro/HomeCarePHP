@@ -39,6 +39,6 @@
     <br />
 
     <div>
-        <input type="submit" name="botao" value="Salvar" />
+        <input type="submit" name="botao" value="submit" />
     </div>
 </form>

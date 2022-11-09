@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8" />
@@ -24,13 +24,17 @@
 
     <ul class="menu">
         <li title="home"><a href="index.php" class="menu-button home">menu</a></li>
+        <li title="Anuncios"><a href="index.php?page=Anuncios_Listagem.php" class="bi bi-card-text">Anuncios</a></li>
     </ul>
+    
+        
+    
 
     </div>
 
     <div class="col-md-11" id="content">
       <?php
-      
+  
       $pagina = @$_GET['page'];
       
       if ($pagina == '') $pagina = "listagem.php";

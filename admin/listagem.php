@@ -34,6 +34,23 @@
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['nome']; ?></td>
             <td>
+              <a href="./index.php?page=listagem_Anuncios.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Anuncios</a>
+            </td>
+            <td>
+              <a href="./index.php?page=listagem_pacientes.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Pacientes</a>
+            </td>
+            <td>
+              <a href="./index.php?page=listagem_contatos.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Contatos</a>
+            </td>
+            <td>
+              <a href="./index.php?page=listagem_Experiencias.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Experiencias</a>
+            </td>
+            <td>
+              <a href="./index.php?page=listagem_Formacoes.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Formações</a>
+            </td>
+            <td>
+              <a href="Alterar/cliente_Alterar.php?page=Alterar_Cliente&id=<?php echo $row['id']; ?>">Detalhes</a>
+              <a href="Alterar/cliente_Alterar.php?page=Alterar_Cliente&id=<?php echo $row['id']; ?>">Alterar</a>
               <a href="Excluir/cliente_excluir.php?acao=excluir&id=<?php echo $row['id']; ?>">Excluir</a>
             </td>
           </tr>

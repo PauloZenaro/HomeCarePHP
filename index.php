@@ -1,72 +1,124 @@
+<?php
+	require_once 'classes/usuarios.php';
+	$u = new usuario;
+
+?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Shop Homepage - Start Bootstrap Template</title>
-    <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="css/home.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+	<title>Cadastrar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style>
+		
+		div#msg-sucesso{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(50,205,50,.3);
+	border: 1px solid rgba(34,39,34);
+}
+
+
+div.msg-erro{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+	background-color: rgba(250, 128, 114,.3);
+	border: 1px solid rgba(165,42,42);
+}
+
+
+
+body{
+			background-color: #006A7A; 
+			padding-top: 150px;
+			background-position-x: 0;
+			background-position-y: 0;
+			background-repeat: no-repeat;
+		}
+
+	</style>
+
+
+<div class="btn-group btn-group-lg btn-group-justified">
+		<a href="index.php" class="btn btn-info">
+		  <span class="glyphicon glyphicon-user"></span> Login
+		</a>
+		<a href="cadastrar.php" class="btn btn-info">
+		  <span class="glyphicon glyphicon-user"></span> Cadastrar
+		</a>
+		</div>
+		<br><br><br>
+
 </head>
-
 <body>
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="./index.php">Home Care</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php?page=home">Home</a></li>,
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.php?page=logout">Sair</a></li>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- Header-->
-    <header class="wallpaper bg-dark py-5">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="text-center text-white">
-                <h1 class="display-4 fw-bolder">Home Care</h1>
-            </div>
-        </div>
-    </header>
-    <!-- Section-->
-    <section class="py-5">
+	<div id="corpo-form-cad">
+	<form method="POST">
+	<h1>Cadastro</h1>
+<form action="" method="POST">
+        <label>Login:</label><input type="text" name="LoginUsuario"><br>
+        <label>Senha:</label><input type="password" name="senha"><br>
+        <br/>
+        <input class="btn btn-primary btn-lg btn-block" type="submit">
 
-        <?php
-        include "config.php";
-        $page = @$_GET['page'];
+</form>
+    
 
-        if ($page != '') {
-            if (file_exists($page . ".php"))
-                include $page . ".php";
-            else
-                echo "Página não encontrada !";
-        } else
-            include "Login.php";
+    
+	</form>
+</div>
 
-        ?>
+<?php 
+	include "config.php";
+	$page = @$_GET['page'];
 
-    </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
-        </div>
-    </footer>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
-</body>
+	if ($page != '') {
+		if (file_exists($page . ".php"))
+			include $page . ".php";
+		else
+			echo "Página não encontrada !";
+	} else
+		include "Login.php";
+?>
 
-</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<style>
+		body{
+			background-color: #006a7a; 
+			background-image: url();
+			padding-top: 150px;
+			background-position-x: 0;
+			background-position-y: 0;
+			background-repeat: no-repeat;
+		}
+
+		h1{
+			color:black;
+		}
+
+	</style>
+
+<div class="btn-group btn-group-lg btn-group-justified">
+		<a href="index.php">
+
+	</div>
+	<br><br><br>
+
+
+	</head>
+	</div>
