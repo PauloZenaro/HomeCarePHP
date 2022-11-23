@@ -12,23 +12,16 @@ if (@$_POST['botao']) {
 
   if ($Nome != '' && $Data != '' && $Cpf != '') {
 
-    #  $imagem = $date->getTimestamp()."_". $tipo. ".jpg";
-    $sql = "Alter table cliente (Nome, LoginUsuario, DataDeNascimentoUsuario, cpf, Rg, email, senha) 
-      VALUES ( '$Nome', '$LoginUsuario', '$Data', '$Cpf', '$Rg', '$email', '$senha') where id = $Id";
-   # echo $sql;
-
-    # $uploaddir = '../imagens/produtos/';
-    #$uploadfile = $uploaddir . $imagem;
-
-    #echo '<pre>';
-    /*if (move_uploaded_file($_FILES['foto']['tmp_name'], $uploadfile)) {
-          echo "Arquivo válido e enviado com sucesso.\n";
-          echo '<meta http-equiv = "refresh" content = "2; url = ./index.php" />';
-      } else {
-          echo "Possível ataque de upload de arquivo!\n";
-          
-      }*/
-
+  
+    $sql = "UPDATE cliente SET Nome='$Nome',
+                                `DataDeNascimentoUsuario`='$Data',
+                                `Cpf`='$Cpf',
+                                `Rg`='$Rg',
+                                `email`='$email',
+                                `LoginUsuario`='$LoginUsuario',
+                                `senha`='$senha'
+                                WHERE Id = $Id ";
+    echo $sql;
     $conn = Conectar();
     $result = $conn->query($sql);
     echo '<meta http-equiv = "refresh" content = "2; url = ./index.php" />';

@@ -32,7 +32,7 @@
           <tr>
             <td><?php echo $row['IdAnuncio']; ?></td>
             <td><?php echo $row['FkIdClienteCriadorInAnuncios']; ?></td>
-            <td>
+       <!--     <td>
               <a href="./index.php?page=Anuncios_Descricao.php&id=<?php echo $row['IdAnuncio'];?>">Descrição</a>
             </td>
             <td>
@@ -42,7 +42,7 @@
               <a href="Alterar/Anuncio_Alterar.php?page=Alterar_Anuncio&id=<?php echo $row['IdAnuncio']; ?>">Detalhes</a>
               <a href="Alterar/Anuncio_Alterar.php?page=Alterar_Anuncio&id=<?php echo $row['IdAnuncio']; ?>">Alterar</a>
               <a href="Excluir/Anuncio_excluir.php?acao=excluir&id=<?php echo $row['IdAnuncio']; ?>">Excluir</a>
-            </td>
+            </td>-->
           </tr>
           <?php }}
            ?>

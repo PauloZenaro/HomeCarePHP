@@ -1,6 +1,6 @@
 <h1>Alterar Cliente</h1>
 
-<?php include "./Cliente_Alterar_post.php"; 
+<?php include "Alterar/Cliente_Alterar_post.php"; 
 $Id = $_GET['id'];
 $conn = Conectar();
 
@@ -15,7 +15,7 @@ if ($result->num_rows > 0) {
   while ($row = $result->fetch_assoc()) {      
 
 ?>
-<form method="post" enctype="multipart/form-data" target="Cliente_Alterar_post.php">
+<form method="post" enctype="multipart/form-data" target="./Cliente_Alterar_post.php">
     <div>
         <label>Id:</label>
         <input type="text" name="Id" size="50" Value ="<?php echo $row['Id']?>" readonly/>
@@ -58,7 +58,7 @@ if ($result->num_rows > 0) {
     <br />
 
     <div>
-        <input type="submit" name="botao" value="submit" />
+        <input type="submit" name="botao" value="submit"/>
     </div>
 </form>
 

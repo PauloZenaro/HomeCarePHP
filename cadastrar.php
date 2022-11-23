@@ -1,12 +1,7 @@
-<?php
-	require_once 'classes/usuarios.php';
-	$u = new usuario;
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login</title>
+	<title>Cadastrar</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,7 +10,7 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<style>
 		
-		div#msg-sucesso{
+	div#msg-sucesso{
 	width: 400px;
 	margin: 10px auto;
 	padding: 10px;
@@ -31,9 +26,6 @@ div.msg-erro{
 	background-color: rgba(250, 128, 114,.3);
 	border: 1px solid rgba(165,42,42);
 }
-
-
-
 body{
 			background-color: #006A7A; 
 			padding-top: 150px;
@@ -44,22 +36,11 @@ body{
 
 	</style>
 
-
-<div class="btn-group btn-group-lg btn-group-justified">
-		<a href="index.php" class="btn btn-info">
-		  <span class="glyphicon glyphicon-user"></span> Login
-		</a>
-		<a href="cadastrar.php" class="btn btn-info">
-		  <span class="glyphicon glyphicon-user"></span> Cadastrar
-		</a>
-		</div>
-		<br><br><br>
-
 </head>
-<body>
+<body><
 	<div id="corpo-form-cad">
 	<h1>Cadastrar</h1>
-	<form method="POST">
+	<form method="POST" target="">
 	<div>
         <label>Nome:</label>
         <input type="text" name="Nome" size="50" />
@@ -159,12 +140,6 @@ if(isset($_POST['nome']))
 			}
 	}else
 	{
-
-
-
-
-
-		
 		?>
 						<div class="msg-erro">
 						preencha todos os campos!
@@ -176,8 +151,5 @@ if(isset($_POST['nome']))
 
 }
 
-
-
 ?>
-</body>
 </html>

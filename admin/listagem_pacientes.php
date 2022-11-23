@@ -39,9 +39,9 @@ $ClienteNome = $_GET['nome'];
           <tr>
             <td><?php echo $row['IdPaciente']; ?></td>
             <td><?php echo $row['NomePaciente']; ?></td>
-            <td><?php echo $row['DataDeNascimentoPasciente'];?></td>
+            <td><?php echo $row['DataDeNascimentoPaciente'];?></td>
             <td>
-              <a href="./index.php?page=excluir/Paciente_Excluir.php&acao=Alterar&id=<?php echo $row['IdPaciente'];?>">Alterar</a>
+              <a href="./index.php?page=Alterar/Paciente_Alterar.php&id=<?php echo $row['IdPaciente'];?>">Alterar</a>
               <a href="./index.php?page=excluir/Paciente_Excluir.php&acao=excluir&id=<?php echo $row['IdPaciente'];?>">Excluir</a>
             </td>
           </tr>

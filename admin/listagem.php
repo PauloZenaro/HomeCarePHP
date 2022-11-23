@@ -9,6 +9,7 @@
       <thead class="thead-dark">
         <td>Código</td>
         <td>Nome</td>
+        <td>Foto</td>
 
       </thead>
       <?php
@@ -19,7 +20,7 @@
 
       $conn = Conectar();
 
-      $query = "SELECT id, nome FROM cliente
+      $query = "SELECT id, nome, Foto FROM cliente
       
       order by id";
      
@@ -33,6 +34,7 @@
           <tr>
             <td><?php echo $row['id']; ?></td>
             <td><?php echo $row['nome']; ?></td>
+            <td><img src="../Fotos/<?php echo $row['Foto'];?>" alt='Foto Perfil' width="48"></td>
             <td>
               <a href="./index.php?page=listagem_Anuncios.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Anuncios</a>
             </td>
@@ -49,8 +51,11 @@
               <a href="./index.php?page=listagem_Formacoes.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Formações</a>
             </td>
             <td>
-              <a href="Alterar/cliente_Alterar.php?page=Alterar_Cliente&id=<?php echo $row['id']; ?>">Detalhes</a>
-              <a href="Alterar/cliente_Alterar.php?page=Alterar_Cliente&id=<?php echo $row['id']; ?>">Alterar</a>
+              <a href="index.php?page=Alterar/Cliente_Alterar_Foto.php&id=<?php echo $row['id'];?>&nome=<?php echo $row['nome'];?>">Mudar Foto</a>
+            </td>
+            <td>
+              <a href="index.php?page=Detalhes/Cliente_Detalhes.php&id=<?php echo $row['id'];?>">Detalhes</a>
+              <a href="index.php?page=Alterar/cliente_Alterar.php&id=<?php echo $row['id']; ?>">Alterar</a>
               <a href="Excluir/cliente_excluir.php?acao=excluir&id=<?php echo $row['id']; ?>">Excluir</a>
             </td>
           </tr>

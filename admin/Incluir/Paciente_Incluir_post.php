@@ -8,7 +8,7 @@ if (@$_POST['botao']) {
   if ($NomePaciente != '' && $Data != '' && $IdCliente != '') {
 
 
-    $sql = "INSERT INTO paciente (FkIdClienteInPaciente, NomePaciente, DataDeNascimentoPasciente) 
+    $sql = "INSERT INTO paciente (FkIdClienteInPaciente, NomePaciente, DataDeNascimentoPaciente) 
       VALUES ( '$IdCliente', '$NomePaciente', '$Data')";
     echo $sql;
     $conn = Conectar();

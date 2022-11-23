@@ -1,4 +1,4 @@
-<h1>Inclusão de Contato</h1>
+<h1>Inclusão de Formação</h1>
 <!-- Clientes_incluir -->
 <?php include "Formacao_Incluir_post.php"; ?>
 <form method="post" enctype="multipart/form-data" target="/admin/Incluir/Formacao_Incluir_post.php">

@@ -25,10 +25,7 @@
     <ul class="menu">
         <li title="home"><a href="index.php" class="menu-button home">menu</a></li>
         <li title="Anuncios"><a href="index.php?page=Anuncios_Listagem.php" class="bi bi-card-text">Anuncios</a></li>
-    </ul>
-    
-        
-    
+    </ul>   
 
     </div>
 

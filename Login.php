@@ -25,9 +25,6 @@ if(isset($_POST['LoginUsuario']) || isset($_POST['senha'])) {
 
         $sql_query = $conn->query($sql_code) or die("falha na execução" . $conn->error);
         $quantidade = $sql_query->num_rows;
-     
-        
-
     if($quantidade == 1 )
         {
         $usuario = $sql_query->fetch_assoc();
@@ -39,7 +36,7 @@ if(isset($_POST['LoginUsuario']) || isset($_POST['senha'])) {
         $_SESSION ['nome'] = $usuario['Nome']; 
 
 
-        header("Location: ./index.php?page=Home"); 
+        header("Location: ./index.php?page=Home.php"); 
         #$page = "./index.php?page=Home";
     }
     else
@@ -49,4 +46,20 @@ if(isset($_POST['LoginUsuario']) || isset($_POST['senha'])) {
 }}
 
 ?>
+<div class="btn-group btn-group-lg btn-group-justified">
+		<a href="./index.php?page=cadastrar.php" class="btn btn-info">
+		  <span class="glyphicon glyphicon-user"></span> Cadastrar
+		</a>
+		</div>
+		<br>
 
+        <div id="corpo-form-cad">
+        <form action="" method="POST">
+        <label>Login:</label><input type="text" name="LoginUsuario"><br>
+        <label>Senha:</label><input type="password" name="senha"><br>
+
+        <br/>
+        </div>
+        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Entrar">
+
+</form>

@@ -1,4 +1,4 @@
-<h1>Inclusão de Cliente</h1>
+<h1>Inclusão de Paciente</h1>
 <!-- Clientes_incluir -->
 <?php include "paciente_incluir_post.php"; ?>
 <form method="post" enctype="multipart/form-data" target="/admin/Incluir/Paciente_Incluir_post.php">
