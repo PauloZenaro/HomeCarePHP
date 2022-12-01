@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/login.css">
 	<script src="jquery-3.4.1.min.js"></script>
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 

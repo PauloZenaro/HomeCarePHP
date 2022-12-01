@@ -35,7 +35,7 @@ if (@$_POST['botao']) {
       } 
       else {
           echo "Possível ataque de upload de arquivo!\n";
-          echo '<meta http-equiv = "refresh" content = "2; url = ./index.php" />';
+          echo '<meta http-equiv = "refresh" content = "2; url = ../index.php" />';
       }
 
    #   $conn = Conectar();

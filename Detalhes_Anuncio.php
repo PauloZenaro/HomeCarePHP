@@ -57,7 +57,7 @@ if ($result->num_rows > 0) {
     <br />
     <div>
         <label for='DescricaoAnuncio'>Descrição do Serviço:</label><br>
-        <textarea id=DescricaoAnuncio name="DescricaoAnuncio" maxlength="300" size="100" rows="5" cols="100" placeholder="<?php echo $row['DescricaoAnuncio']?>" readonly></textarea>
+        <textarea id=DescricaoAnuncio style="background-color:#00acc7;" name="DescricaoAnuncio" maxlength="300" size="100" rows="5" cols="100" placeholder="<?php echo $row['DescricaoAnuncio']?>" readonly></textarea>
     </div>
     <br>
         <form method="POST" action="Candidatar_post.php">

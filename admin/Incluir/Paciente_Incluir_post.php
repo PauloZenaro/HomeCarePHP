@@ -13,6 +13,6 @@ if (@$_POST['botao']) {
     echo $sql;
     $conn = Conectar();
     $result = $conn->query($sql);
-    echo '<meta http-equiv = "refresh" content = "2; url = ./index.php" />';
+    echo '<meta http-equiv = "refresh" content = "0; url = ./sucesso.php" />';
   }
 }

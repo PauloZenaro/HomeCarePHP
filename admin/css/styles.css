@@ -138,4 +138,8 @@
   .menu{
         height:3.5em;
     }
+
+    .input{
+      background-color: white;
+    }
 }
